@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyberpunk RED Full Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cyberpunk RED - Hoja Completa</h1>
+    <form id="sheet">
+        <h2>Atributos</h2>
+        <label>INT (Inteligencia): <input type="number" id="int"></label> <button type="button" onclick="roll('int')">Tirar INT (Inteligencia)</button><br>
+<label>REF (Reflejos): <input type="number" id="ref"></label> <button type="button" onclick="roll('ref')">Tirar REF (Reflejos)</button><br>
+<label>TEC (Tecnología): <input type="number" id="tec"></label> <button type="button" onclick="roll('tec')">Tirar TEC (Tecnología)</button><br>
+<label>COOL (Frialdad): <input type="number" id="cool"></label> <button type="button" onclick="roll('cool')">Tirar COOL (Frialdad)</button><br>
+<label>ATTR (Atractivo): <input type="number" id="attr"></label> <button type="button" onclick="roll('attr')">Tirar ATTR (Atractivo)</button><br>
+<label>LUCK (Suerte): <input type="number" id="luck"></label> <button type="button" onclick="roll('luck')">Tirar LUCK (Suerte)</button><br>
+<label>MA (Movimiento): <input type="number" id="ma"></label> <button type="button" onclick="roll('ma')">Tirar MA (Movimiento)</button><br>
+<label>BOD (Cuerpo): <input type="number" id="bod"></label> <button type="button" onclick="roll('bod')">Tirar BOD (Cuerpo)</button><br>
+<label>EMP (Empatía): <input type="number" id="emp"></label> <button type="button" onclick="roll('emp')">Tirar EMP (Empatía)</button><br>
+<label>WILL (Voluntad): <input type="number" id="will"></label> <button type="button" onclick="roll('will')">Tirar WILL (Voluntad)</button><br>
+        <h2>Salud</h2>
+        <label>HP Total: <input type="number" id="hp_total"></label><br>
+        <label>HP Actual: <input type="number" id="hp_current"></label><br>
+        <label>Humanidad: <input type="number" id="humanity"></label><br>
+        <label>Gravemente Herido: <input type="checkbox" id="critically_injured"></label><br>
+
+        <h2>Habilidades</h2>
+        <label>Percepción: <input type="number" id="perception"></label>
+        <button type="button" onclick="roll('perception')">Tirar Percepción</button><br>
+        <label>Sigilo: <input type="number" id="stealth"></label>
+        <button type="button" onclick="roll('stealth')">Tirar Sigilo</button><br>
+        <label>Disparo (Armas Cortas): <input type="number" id="handgun"></label>
+        <button type="button" onclick="roll('handgun')">Tirar Armas Cortas</button><br>
+        <label>Conducir: <input type="number" id="drive"></label>
+        <button type="button" onclick="roll('drive')">Tirar Conducir</button><br>
+        <label>Persuasión: <input type="number" id="persuasion"></label>
+        <button type="button" onclick="roll('persuasion')">Tirar Persuasión</button><br>
+
+        <h2>Equipo</h2>
+        <textarea id="gear" rows="4" cols="50" placeholder="Lista tu equipo aquí..."></textarea><br>
+
+        <h2>Ciberware</h2>
+        <textarea id="cyberware" rows="4" cols="50" placeholder="Lista tu ciberware aquí..."></textarea><br>
+
+        <h2>Notas</h2>
+        <textarea id="notes" rows="4" cols="50" placeholder="Otras notas del personaje..."></textarea><br>
+
+        <button type="button" onclick="save()">Guardar</button>
+    </form>
+    <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
