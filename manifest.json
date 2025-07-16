@@ -3,6 +3,5 @@
     "name": "Cyberpunk Red Character Sheets",
     "version": "1.0.0",
     "description": "Character sheet with Cyberpunk Red attributes and automated dice rolls",
-    "entry": "index.html",
     "type": "window"
 }
