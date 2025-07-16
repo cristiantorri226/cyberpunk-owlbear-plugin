@@ -1,4 +1,5 @@
 {
+    "manifest_version": 1,
     "name": "Cyberpunk Red Character Sheets",
     "id": "cyberpunk-red-sheets",
     "version": "1.0.0",
